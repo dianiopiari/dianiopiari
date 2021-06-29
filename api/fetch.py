@@ -22,9 +22,9 @@ class FetchDrama(BaseFetch):
         self.info["title"] = container.find("h1", class_="film-title").find("a").text
 
         # RATING
-        self.info["rating"] = float(
-            #(container.find("div", class_="col-film-rating").find("div").text)
-        )
+#         self.info["rating"] = float(
+#             #(container.find("div", class_="col-film-rating").find("div").text)
+#         )
 
         # POSTER
         self.info["poster"] = self._get_poster(container)
