@@ -23,7 +23,7 @@ class FetchDrama(BaseFetch):
 
         # RATING
         self.info["rating"] = float(
-            (container.find("div", class_="col-film-rating").find("div").text)
+            #(container.find("div", class_="col-film-rating").find("div").text)
         )
 
         # POSTER
